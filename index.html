@@ -1,9 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Matthew Gonczar</title>
-</head>
-<body>
-	<h1>Test</h1>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="./images/star.png">
+		<title>Matthew Gonczar</title>
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script type="text/javascript" src="./js/app.js"></script>
+	</head>
+	<body>
+
+		<header id="home">
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<h1>Matthew Gonczar</h1>
+			<h2>Software Engineer / Web Developer</h2>
+		</header>
+
+		<section id="projects">
+			<h2>Projects</h2>
+			<h3>This is where I've been able to apply the skills I've learned to ideas I'm passionate about.</h3>
+
+			<div id="allo">
+				<form action="https://allo-web.herokuapp.com/" target="_blank">
+					<button></button>
+				</form>
+				<p>Allo is an instant translation messaging app. It is decoupled with the back end being built with node.js, express and mongoDb. The front end was made using the ReactJS library.</p>
+				<a href="https://github.com/gumballg/Allo-React">Front-end Github</a><br/>
+				<a href="https://github.com/gumballg/Allo-Backend">Back-end Github</a>
+			</div>
+
+			<div id="legend">
+				<form>
+					<button></button>
+				</form>
+				<p></p>
+				<a href=""></a>
+			</div>
+
+			<div id="gregs">
+				<form>
+					<button></button>
+				</form>
+				<p></p>
+				<a href=""></a>
+			</div>
+		</section>
+
+		<section id="about">
+			<h2>About</h2>
+			<div id="popup">
+				<button onclick="togglePdf()">Résumé</button>
+				<embed class="pdf" id="myPdf" src="./images/resume.pdf">
+			</div>
+		</section>
+
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<ul>
+				<li>
+					<a href="mailto:matthew.gonczar@gmail.com"><img src="./images/mail.png"></a>
+				</li>
+				<li>
+					<a href="https://github.com/gumballg"><img src="./images/github.png"></a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/matthew-gonczar/"><img src="./images/in.png"></a>
+				</li>
+			</ul>
+		</section>
+
+	</body>
 </html>
