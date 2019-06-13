@@ -1,3 +1,11 @@
+html, body{
+	height: 100%;
+}
+
+*{
+	box-sizing: border-box;
+}
+
 html{
 	scroll-behavior: smooth;
 }
@@ -11,12 +19,48 @@ a{
 	text-decoration: none;
 }
 
+header{
+	border: solid black 1px;
+	height: 100%;
+	/*display: table-cell;*/
+}
+
 header, section h2, section h3{
 	text-align: center;
 }
 
 header h1{
-	margin-top: 100px;
+	display: inline-block;
+	background-color: white;
+	margin-top: 25%;
+	font-size: 50px;
+	padding: 0 10px;
+	border-radius: 5px;
+	/*vertical-align: middle;*/
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
+}
+
+.name{
+	margin: auto;
+	vertical-align: middle;
+}
+
+header h2{
+	display: inline-block;
+	background-color: white;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
+	padding: 5px 10px;
+	border-radius: 5px;
+	/*margin-bottom: 36%;*/
+}
+
+header{
+	background-image: url('../images/code.jpg');	
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed;
+  	height: 100%;
 }
 
 nav{
@@ -56,28 +100,80 @@ nav a:hover{
 	color: blue;
 }
 
-#allo button {
-	height: 300px;
-	width: 300px;
-	background: url("../images/allo.png");
-	background-size: auto 100%;
-	border-radius: 10px;
+#projects{
+	width: 100%;
+	text-align: center;
 }
 
-#allo button:hover{
-	opacity: .7;
-	transition-duration: .4s; 
-} 
+#projects h2{
+	background-color: black;
+	color: red;
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 30px;
+	/*text-align: center;*/
+}
+
+#allo, #legend, #greg{
+	float: left;
+	width: 28%;
+	margin-left: 4%;
+	border-radius: 5px;
+	background-color: gray;
+	color: white;
+}
 
 #projects h4, #projects p{
 	text-align: center;
 }
 
-#allo{
+form{
+	text-align: center;
+}
+
+#allo button{
+	background: url("../images/allo.png");
+}
+
+#greg button{
+	background: url("../images/list.png");
+}
+
+#legend button{
+	background: url("../images/legend.png");
+}
+
+#projects button{
+	border: none;
+	margin-top: 20px;
+	height: 300px;
+	width: 300px;
+	background-size: auto 100%;
+	border-radius: 10px;
+	transition-duration: .4s; 
+}
+
+
+#projects button:hover{
+	opacity: .7;
+	height: 325px;
+	width: 325px;
+	transition-duration: .4s; 
+} 
+
+
+/*#allo{
 	margin-left: 20px;
 	margin: 0 auto;
 	border: 1px black solid;
 	display: inline-block;
+}*/
+
+#about{
+	margin-top: 200px;
+}
+#about p{
+	text-align: center;
 }
 
 #popup{
