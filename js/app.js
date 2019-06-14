@@ -10,5 +10,15 @@ $(document).ready(function(){
 	    $('body').removeClass('shade');
 	  }
 	});
+
+	let maxHeight = 0;
+
+	$("#projects").each(function(){
+	   if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+	});
+
+	$("projects").height(maxHeight);
+
 })
+
 

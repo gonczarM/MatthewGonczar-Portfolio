@@ -23,64 +23,10 @@ a{
 	text-decoration: none;
 }
 
-header{
-	border: solid black 1px;
-	height: 100%;
-	/*display: table-cell;*/
-}
-
-header, section h2, section h3{
-	text-align: center;
-}
-
-header h1{
-	display: inline-block;
-	background-color: white;
-	margin-top: 25%;
-	font-size: 50px;
-	padding: 0 10px;
-	border-radius: 5px;
-	/*vertical-align: middle;*/
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
-}
-
-.name{
-	margin: auto;
-	vertical-align: middle;
-}
-
-header h2{
-	display: inline-block;
-	background-color: white;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
-	padding: 5px 10px;
-	border-radius: 5px;
-	/*margin-bottom: 36%;*/
-}
-
-header{
-	background-image: url('../images/code.jpg');	
-	background-repeat: no-repeat;
-	background-size: cover;
-  	background-position: center;
-  	background-attachment: fixed;
-  	height: 100%;
-}
-
 nav{
 	position: fixed;
 	top: 0;
 	width: 100%;
-	/*top: -250px;*/
-}
-
-h1::before ,h2::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -50px; 
-  height: 50px; 
-  visibility: hidden; 
-  pointer-events: none;
 }
 
 nav ul{
@@ -100,13 +46,39 @@ nav a{
 	color: white;
 }
 
-nav a:hover, nav a:active{
+nav a:hover{
 	color: blue;
 }
 
+header{
+	text-align: center;
+	background-image: url('../images/code.jpg');	
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed;
+  	height: 100%;
+}
+
+header h1, header h2{
+	display: inline-block;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
+}
+
+header h1{
+	margin-top: 300px;
+	font-size: 50px;
+	padding: 0 10px;
+}
+
+header h2{
+	padding: 5px 10px;
+}
+
 #projects{
-	width: 100%;
-	height: 120%;
+	height: 150%;
 	text-align: center;
 }
 
@@ -118,14 +90,13 @@ nav a:hover, nav a:active{
 	font-size: 50px;
 	border-radius: 5px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
-	/*text-align: center;*/
 }
 
 #allo, #legend, #greg{
-	float: left;
-	width: 28%;
-	height: 75%;
-	margin-left: 4%;
+	display: inline-block;
+	width: 32%;
+	height: 68%;
+	vertical-align: top;
 	border-radius: 5px;
 	background-color: gray;
 	color: white;
@@ -134,18 +105,10 @@ nav a:hover, nav a:active{
 #projects p{
 	width: 90%;
 	margin: 0 auto;
-	padding: 0 5px;
-	/*border-radius: 5px;*/
-	/*background-color: black;*/
-	text-align: center;
 }
 
 #projects .text{
-	margin-top: 10px;
-}
-
-form{
-	text-align: center;
+	margin-top: 20px;
 }
 
 #allo button{
@@ -163,35 +126,25 @@ form{
 #projects button{
 	border: none;
 	margin-top: 20px;
-	height: 300px;
+	height: 250px;
 	width: 90%;
-	background-repeat: no-repeat;
 	background-size: cover;
-  	background-position: top;
-	border-radius: 10px;
+  	background-position: top center;
+	border-radius: 5px;
 	transition-duration: .4s; 
 }
 
 
 #projects button:hover{
 	opacity: .7;
-	height: 350px;
+	height: 300px;
 	width: 100%;
 	transition-duration: .4s; 
 } 
 
-
-/*#allo{
-	margin-left: 20px;
-	margin: 0 auto;
-	border: 1px black solid;
-	display: inline-block;
-}*/
-
-.chicago{
+/*.chicago{
 	background: url('../images/chicago.jpg');
 	height: 125%;
-	/*background-repeat: no-repeat;*/
 	background-size: cover;
   	background-position: center;
   	background-attachment: fixed;
@@ -201,6 +154,7 @@ form{
 	margin-top: 20px;
 	height: 50%;
 }
+
 #about p{
 	text-align: center;
 }
@@ -236,8 +190,16 @@ form{
 	margin: 0 15px;
 }
 
-
 #contact img{
 	height: 75px;
-}
+}*/
 
+@media screen and (max-width: 800px){
+	#allo, #legend, #greg{
+		display: block;
+		width: 95%;
+		margin-left: 3%;
+		margin-bottom: 20px;
+		height: 55%;
+	}
+}
