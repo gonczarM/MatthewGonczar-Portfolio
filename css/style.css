@@ -33,7 +33,7 @@ nav ul{
 	list-style: none;
 	padding: 10px 0;
 	margin: 0;
-	background-color: black; 
+	background-color: rgb(40,40,50); 
 }
 
 nav li{
@@ -98,15 +98,12 @@ header h2{
 	height: 68%;
 	vertical-align: top;
 	border-radius: 5px;
-	background-color: gray;
+	background-color: rgb(192,192,192);
 }
 
 #projects p{
 	width: 90%;
 	margin: 0 auto;
-}
-
-#projects .text{
 	margin-top: 20px;
 }
 
@@ -167,8 +164,8 @@ header h2{
 	margin: 0 auto;
 	margin-bottom: 20px; 
 	padding: 10px;
-	background-color: gray;
-	width: 75%;
+	background-color: rgb(192,192,192);
+	width: 96%;
 	border-radius: 15px;
 }
 
@@ -187,7 +184,7 @@ header h2{
 	border-radius: 5px;
 	padding: 10px 10px;
 	font-size: 20px;
-	box-shadow: 0 8px 16px 0 rgba(0,0,255,0.5), 0 6px 20px 0 rgba(0,0,255,0.5);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
 	transition-duration: .4s;
 }
 
