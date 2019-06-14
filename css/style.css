@@ -217,6 +217,15 @@ header h2{
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
 }
 
+#contact .me{
+	display: block;
+	height: 350px;
+	border-radius: 200px;
+	border: black solid 5px;
+	margin: 30px auto;
+	margin-bottom: 60px;
+}
+
 #contact ul{
 	text-align: center;
 	list-style: none;
@@ -229,8 +238,14 @@ header h2{
 	margin: 0 15px;
 }
 
-#contact img{
+#contact ul img{
 	height: 75px;
+	margin-bottom: 30px;
+}
+
+footer{
+	bottom: 0;
+	margin-left: 10px;
 }
 
 @media screen and (max-width: 1080px){
