@@ -243,11 +243,6 @@ header h2{
 	margin-bottom: 30px;
 }
 
-footer{
-	bottom: 0;
-	margin-left: 10px;
-}
-
 @media screen and (max-width: 1080px){
 	#allo, #legend, #greg{
 		display: block;
