@@ -2,6 +2,10 @@ html, body{
 	height: 100%;
 }
 
+.shade{
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
 *{
 	box-sizing: border-box;
 }
@@ -96,35 +100,48 @@ nav a{
 	color: white;
 }
 
-nav a:hover{
+nav a:hover, nav a:active{
 	color: blue;
 }
 
 #projects{
 	width: 100%;
+	height: 120%;
 	text-align: center;
 }
 
 #projects h2{
 	background-color: black;
-	color: red;
+	color: white;
 	display: inline-block;
-	padding: 5px 10px;
-	font-size: 30px;
+	padding: 5px 15px;
+	font-size: 50px;
+	border-radius: 5px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
 	/*text-align: center;*/
 }
 
 #allo, #legend, #greg{
 	float: left;
 	width: 28%;
+	height: 75%;
 	margin-left: 4%;
 	border-radius: 5px;
 	background-color: gray;
 	color: white;
 }
 
-#projects h4, #projects p{
+#projects p{
+	width: 90%;
+	margin: 0 auto;
+	padding: 0 5px;
+	/*border-radius: 5px;*/
+	/*background-color: black;*/
 	text-align: center;
+}
+
+#projects .text{
+	margin-top: 10px;
 }
 
 form{
@@ -147,8 +164,10 @@ form{
 	border: none;
 	margin-top: 20px;
 	height: 300px;
-	width: 300px;
-	background-size: auto 100%;
+	width: 90%;
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: top;
 	border-radius: 10px;
 	transition-duration: .4s; 
 }
@@ -156,8 +175,8 @@ form{
 
 #projects button:hover{
 	opacity: .7;
-	height: 325px;
-	width: 325px;
+	height: 350px;
+	width: 100%;
 	transition-duration: .4s; 
 } 
 
@@ -169,29 +188,39 @@ form{
 	display: inline-block;
 }*/
 
+.chicago{
+	background: url('../images/chicago.jpg');
+	height: 125%;
+	/*background-repeat: no-repeat;*/
+	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed;
+}
+
 #about{
-	margin-top: 200px;
+	margin-top: 20px;
+	height: 50%;
 }
 #about p{
 	text-align: center;
 }
 
-#popup{
-	position: relative;
-}
-
-#popup .pdf{
-	position: absolute;
-	visibility: hidden;
-	height: 1000px;
-	width: 1000px;
-}
-
-#popup .show{
-	visibility: visible;
+.modal {
+  display: none;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  background: rgba(0, 0, 0, 0.5);
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  box-sizing:border-box;
+  box-shadow:0 0 20px rgba(0,0,0,.2);
 }
 
 #contact{
+	height: 50%;
 	margin: 0 auto;
 }
 
