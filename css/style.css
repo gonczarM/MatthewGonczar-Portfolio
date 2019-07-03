@@ -89,6 +89,10 @@ header h2{
 	border-radius: 5px;
 }
 
+#projects h3{
+	padding: 0 20px;
+}
+
 #allo, #legend, #greg{
 	display: inline-block;
 	width: 32%;
@@ -265,6 +269,19 @@ header h2{
 
 #contact a{
 	display: block;
+	color: black;
+}
+
+#contact a:hover{
+	color: blue;
+}
+
+#contact p{
+	padding: 0 20px;
+}
+
+footer{
+	margin-left: 10px;
 }
 
 @media screen and (max-width: 1080px){
