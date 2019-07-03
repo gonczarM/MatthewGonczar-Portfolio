@@ -21,6 +21,7 @@ body{
 
 a{
 	text-decoration: none;
+	color: white;
 }
 
 nav{
@@ -42,11 +43,7 @@ nav li{
 	margin: 0 15px;
 }
 
-nav a{
-	color: white;
-}
-
-nav a:hover{
+a:hover{
 	color: blue;
 }
 
@@ -241,10 +238,13 @@ header h2{
 }
 
 #contact ul{
+	background-color: rgb(192,192,192);
+	width: 96%;
+	border-radius: 15px;
 	text-align: center;
 	list-style: none;
 	padding: 10px 0;
-	margin: 0;
+	margin: 0 auto;
 }
 
 #contact li{
@@ -260,6 +260,10 @@ header h2{
 #contact ul img:hover{
 	opacity: .5;
 	transition-duration: .4s;
+}
+
+#contact a{
+	display: block;
 }
 
 @media screen and (max-width: 1080px){
@@ -281,5 +285,9 @@ header h2{
 	}
 	.resume{
 		display: inline-block;
+	}
+	#contact li{
+		display: block;
+		padding-bottom: 20px;
 	}
 }
