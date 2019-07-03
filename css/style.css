@@ -180,7 +180,7 @@ header h2{
 	font-size: 17px;
 }
 
-#about button{
+#about .modal-button{
 	border: none;
 	background-color: blue;
 	color: white;
@@ -192,7 +192,7 @@ header h2{
 }
 
 #about button:hover{
-	background-color: rgba(0,0,255,.7);
+	opacity: .5;
 	transition-duration: .4s;
 }
 
@@ -204,6 +204,18 @@ header h2{
   transform:translate(-50%,-50%);
   width: 90%;
   height: 90%;
+}
+
+.resume{
+	display: none;
+	border: none;
+	background-color: blue;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 10px;
+	font-size: 20px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
+	transition-duration: .4s;
 }
 
 #contact{
@@ -237,12 +249,21 @@ header h2{
 
 #contact li{
 	display: inline-block;
-	margin: 0 15px;
+	margin: 0 30px;
 }
 
 #contact ul img{
 	height: 75px;
-	margin-bottom: 30px;
+	transition-duration: .4s;
+}
+
+#contact ul img:hover{
+	opacity: .5;
+	transition-duration: .4s;
+}
+
+#contact p{
+	margin: 0;
 }
 
 @media screen and (max-width: 1080px){
@@ -259,4 +280,15 @@ header h2{
 	.chicago{
 		display: none;
 	}
+	#about .modal-button{
+		display: none;
+	}
+	.resume{
+		display: inline-block;
+	}
 }
+/*@media screen and (max-width: 720px){
+	#about button{
+		display: none;
+	}
+}*/
