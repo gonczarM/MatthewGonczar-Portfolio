@@ -262,10 +262,6 @@ header h2{
 	transition-duration: .4s;
 }
 
-#contact p{
-	margin: 0;
-}
-
 @media screen and (max-width: 1080px){
 	#allo, #legend, #greg{
 		display: block;
@@ -287,8 +283,3 @@ header h2{
 		display: inline-block;
 	}
 }
-/*@media screen and (max-width: 720px){
-	#about button{
-		display: none;
-	}
-}*/
