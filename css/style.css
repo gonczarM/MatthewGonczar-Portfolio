@@ -8,6 +8,8 @@ html, body{
 
 *{
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html{
@@ -17,6 +19,10 @@ html{
 body{
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
+}
+
+ul{
+	list-style: none;
 }
 
 a{
@@ -31,7 +37,6 @@ nav{
 }
 
 nav ul{
-	list-style: none;
 	padding: 10px 0;
 	margin: 0;
 	background-color: rgb(40,40,50); 
@@ -56,6 +61,7 @@ header{
   	background-attachment: fixed;
   	width: 100%;
   	height: 100%;
+  	margin-bottom: 50px;
 }
 
 header h1, header h2{
@@ -72,6 +78,7 @@ header h1{
 }
 
 header h2{
+	margin-top: 50px;
 	padding: 5px 10px;
 }
 
@@ -87,10 +94,12 @@ header h2{
 	padding: 5px 15px;
 	font-size: 50px;
 	border-radius: 5px;
+	margin-bottom: 20px;
 }
 
 #projects h3{
 	padding: 0 20px;
+	margin-bottom: 20px;
 }
 
 #allo, #legend, #greg{
@@ -113,36 +122,16 @@ header h2{
 	padding-bottom: 20px;
 }
 
-#allo button{
-	background: url("../images/allo.png");
-}
-
-#greg button{
-	background: url("../images/list.png");
-}
-
-#legend button{
-	background: url("../images/legend.png");
-}
-
-#projects button{
-	border: none;
+#projects img{
 	margin-top: 20px;
-	height: 250px;
 	width: 90%;
-	background-repeat: no-repeat;
-  	background-position: top center;
 	border-radius: 5px;
-	transition-duration: .4s; 
-}
-
-#projects #greg button{
-	background-position: left top;
-}
-
-#projects button:hover{
+	transition-duration: .4s;
 	opacity: .5;
-	width: 100%;
+}
+
+#projects img:hover{
+	opacity: 1;
 	transition-duration: .4s; 
 } 
 
@@ -156,6 +145,7 @@ header h2{
 
 #about{
 	text-align: center;
+	margin: 50px 0;
 }
 
 #about h2{
@@ -165,6 +155,7 @@ header h2{
 	padding: 5px 15px;
 	font-size: 50px;
 	border-radius: 5px;
+	margin-bottom: 20px;
 }
 
 .story, .skills{
@@ -172,16 +163,18 @@ header h2{
 	margin-bottom: 20px; 
 	padding: 10px 25px;
 	background-color: rgb(192,192,192);
-	width: 96%;
+	width: 75%;
 	border-radius: 15px;
 }
 
 #about h3{
 	font-size: 30px;
+	margin: 15px 0;
 }
 
 #about p{
 	font-size: 17px;
+	margin-bottom: 10px;
 }
 
 #about .modal-button{
@@ -249,24 +242,24 @@ header h2{
 	width: 96%;
 	border-radius: 15px;
 	text-align: center;
-	list-style: none;
-	padding: 10px 0;
+	padding: 20px 0;
 	margin: 0 auto;
+	margin-bottom: 20px;
 }
 
 #contact li{
 	display: inline-block;
-	margin: 0 30px;
+	margin: 0 50px;
 }
 
 #contact ul img{
 	height: 75px;
-	transition-duration: .4s;
+	transition-duration: .6s;
 }
 
-#contact ul img:hover{
-	opacity: .5;
-	transition-duration: .4s;
+#contact ul a img:hover{
+	filter: invert(100%);
+	transition-duration: .6s;
 }
 
 #contact a{
@@ -279,11 +272,11 @@ header h2{
 }
 
 #contact p{
-	padding: 0 20px;
+	padding-bottom: 20px;
 }
 
 footer{
-	margin-left: 2%;
+	margin-left: 3%;
 }
 
 @media screen and (max-width: 1080px){
@@ -308,6 +301,5 @@ footer{
 	}
 	#contact li{
 		display: block;
-		padding-bottom: 20px;
 	}
 }
