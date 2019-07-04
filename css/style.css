@@ -158,10 +158,10 @@ header h2{
 .chicago{
 	background: url('../images/chicago.jpg');
 	height: 500px;
-	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+	background-size: cover;
   	background-position: center;
   	background-attachment: fixed;
 }
