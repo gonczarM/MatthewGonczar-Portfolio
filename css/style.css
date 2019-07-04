@@ -257,7 +257,11 @@ header h2{
 	border-radius: 200px;
 	border: black solid 5px;
 	margin: 30px auto;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
+}
+
+#contact h3{
+	font-size: 30px;
 }
 
 #contact ul{
