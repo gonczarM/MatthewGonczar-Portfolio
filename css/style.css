@@ -106,28 +106,27 @@ header h2{
 	margin: 20px;
 }
 
-#projects a{
-	color: black;
-}
-
-#projects a:hover{
-	color: blue;
-}
-
 .title{
 	margin: 20px 250px;
 	font-size: 30px;
 	display: inline-block;
 	background-color: white;
 	color: black;
+	transition-duration: .4s;
 	border-radius: 5px;
 	padding: 0 7px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
 }
 
+.title:hover{
+	color: blue;
+	transition-duration: .4s;
+}
+
 .title:active{
 	transform: translateY(7px);
 	transition-duration: .1s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,.1), 0 6px 20px 0 rgba(0,0,0,.1);
 }
 
 #allo, #legend, #greg, .story, .skills, #contact ul{
@@ -176,8 +175,15 @@ p.tech{
 }
 
 #projects p.git{
+	color: black;
 	margin: 0 auto;
 	margin-bottom: 20px;
+	transition-duration: .4s;
+}
+
+#projects p.git:hover{
+	color: blue;
+	transition-duration: .4s;
 }
 
 /*about*/
@@ -226,6 +232,7 @@ p.tech{
 #about .modal-button:active{
 	transform: translateY(7px);
 	transition-duration: .1s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1);
 }
 
 .resume{
@@ -241,7 +248,7 @@ p.tech{
 }
 
 #about button:hover{
-	opacity: .5;
+	color: black;
 	transition-duration: .4s;
 }
 
@@ -301,10 +308,12 @@ p.tech{
 
 #contact a{
 	color: black;
+	transition-duration: .4s;
 }
 
 #contact a:hover{
 	color: blue;
+	transition-duration: .4s;
 }
 
 #contact p{
