@@ -92,44 +92,49 @@ header h2{
 	text-align: center;
 }
 
+#projects .description{
+	margin-bottom: 20px;
+}
+
 #projects h2, #about h2, #contact h2{
 	background-color: black;
+	width: max-content;
 	color: white;
-	display: inline-block;
 	padding: 5px 15px;
 	font-size: 50px;
 	border-radius: 5px;
-	margin-top: 50px;
+	margin: 50px auto;
 }
 
-#projects h4{
-	margin: 20px;
-}
-
-.title{
-	margin: 20px 250px;
-	font-size: 30px;
-	display: inline-block;
-	background-color: white;
+.title, #projects p.git{
 	color: black;
+	margin: 0 auto;
+	background-color: white;
 	transition-duration: .4s;
 	border-radius: 5px;
-	padding: 0 7px;
+	padding: 0 5px;
+	width: max-content;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
 }
 
-.title:hover{
-	color: blue;
+.title{
+	margin-top: 20px;
+	font-size: 40px;
+}
+
+.title:hover, #projects p.git:hover{
+	color: white;
+	background-color: black;
 	transition-duration: .4s;
 }
 
-.title:active{
-	transform: translateY(7px);
+.title:active, #projects p.git:active{
+	transform: translateY(5px);
 	transition-duration: .1s;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,.1), 0 6px 20px 0 rgba(0,0,0,.1);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.2);
 }
 
-#allo, #legend, #greg, .story, .skills, #contact ul{
+#allo, #legend, #greg, .story, .skills, .links{
 	display: inline-block;
 	width: 66%;
 	margin-bottom: 30px;
@@ -170,20 +175,12 @@ p.tech{
 }
 
 .github img:active{
-	transform: translateY(7px);
+	transform: translateY(5px);
 	transition-duration: .1s;
 }
 
 #projects p.git{
-	color: black;
-	margin: 0 auto;
 	margin-bottom: 20px;
-	transition-duration: .4s;
-}
-
-#projects p.git:hover{
-	color: blue;
-	transition-duration: .4s;
 }
 
 /*about*/
@@ -230,18 +227,20 @@ p.tech{
 }
 
 #about .modal-button:active{
-	transform: translateY(7px);
+	transform: translateY(5px);
 	transition-duration: .1s;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
 }
 
 .resume{
+	margin: 0 auto;
 	display: none;
 	border: none;
 	background-color: blue;
 	color: white;
 	border-radius: 5px;
 	padding: 10px 10px;
+	margin-bottom: 30px;
 	font-size: 20px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
 	transition-duration: .4s;
@@ -263,6 +262,13 @@ p.tech{
   z-index: 99;
 }
 
+.divide{
+	width: 85%;
+	border: 3px solid black;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
 /*contact*/
 
 #contact{
@@ -273,27 +279,35 @@ p.tech{
 	margin-bottom: 50px;
 }
 
+#contact h3{
+	font-size: 30px;
+	margin: 20px 0;
+}
+
+#contact .name{
+	margin-bottom: 0;
+}
+
 #contact .me{
 	display: block;
 	height: 350px;
 	border-radius: 200px;
 	border: black solid 5px;
-	margin: 0 auto;
-	margin-bottom: 30px;
+	margin: 30px auto;
 }
 
 #contact h3{
 	font-size: 30px;
 }
 
-#contact li{
-	display: inline-block;
+#contact ul{
+	display: flex;
+	justify-content: space-evenly;
 }
 
 #contact ul img{
 	height: 75px;
 	transition-duration: .4s;
-	margin: 0 75px;
 }
 
 #contact ul a img:hover{
@@ -302,7 +316,7 @@ p.tech{
 }
 
 #contact ul a img:active{
-	transform: translateY(7px);
+	transform: translateY(5px);
 	transition-duration: .1s;
 }
 
@@ -317,7 +331,9 @@ p.tech{
 }
 
 #contact p{
-	margin: 20px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 90%;
 }
 
 /*phones*/
@@ -332,11 +348,15 @@ p.tech{
 	nav li{
 		font-size: 15px;
 	}
-	#allo, #legend, #greg, .story, .skills, #contact ul{
-		width: 95%;
+	#projects h2, #about h2, #contact h2{
+		background-color: white;
+		color: black;
+		text-decoration: underline;
+		font-size: 50px;
+		margin: 50px auto 20px auto;
 	}
-	.title{
-		margin: 20px 0;
+	#allo, #legend, #greg, .story, .skills, .links{
+		width: 95%;
 	}
 	#projects .app img{
 		opacity: 1;
@@ -349,9 +369,9 @@ p.tech{
 		display: none;
 	}
 	.resume{
-		display: inline-block;
+		display: block;
 	}
-	#contact li{
+	#contact ul{
 		display: block;
 	}
 }
