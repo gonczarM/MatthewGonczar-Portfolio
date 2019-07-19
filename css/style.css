@@ -365,6 +365,9 @@ p.tech{
 	#projects .app img:hover{
 		opacity: .5;
 	}
+	#contact .me{
+		width: 95%;
+	}
 	#about .modal-button{
 		display: none;
 	}
